@@ -15,6 +15,9 @@ export default {
   components: {
     HomeBackground,
     NavBar
+  },
+  beforeMount(){
+    this.$store.dispatch('fetchUser')
   }
 }
 </script>

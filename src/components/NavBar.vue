@@ -10,7 +10,7 @@
             <router-link to="/contact" class="nav-link">nous contacter</router-link>
         </div>
         <div>
-            <router-link to="/contact" class="nav-link"><button class="login-btn">Espace Membre</button></router-link>
+            <router-link to="/dashboard" class="nav-link"><button class="login-btn">Espace Membre</button></router-link>
         </div>
     </nav>
 
