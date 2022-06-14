@@ -7,6 +7,7 @@
                         <p class="error">{{ error }}</p>
                         <input type="submit" value="login">
                 </form>
+                <p>Pas de compte ? <router-link class='create' to="/register">Creer un compte</router-link></p>
         </div>
 
 </template>
@@ -37,5 +38,8 @@ export default {
         flex-direction: column;
         gap: 1rem;
 
+}
+.create{
+        text-decoration: underline;
 }
 </style>

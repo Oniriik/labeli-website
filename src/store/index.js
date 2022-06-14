@@ -65,10 +65,10 @@ export default createStore({
                 } else {
                     commit('setUser', auth.currentUser)
                     if (router.isReady() && router.currentRoute.value.path == '/login') {
-                        router.push('/')
+                        router.push('/dashboard')
                     }
                     if (router.isReady() && router.currentRoute.value.path == '/register') {
-                        router.push('/')
+                        router.push('/dashboard')
                     }
                 }
             })
