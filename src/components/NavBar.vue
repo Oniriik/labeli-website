@@ -5,12 +5,12 @@
         </router-link>
         
         <div class="link-container">
-            <router-link to="/events" class="">événements</router-link>
-            <a href="https://www.helloasso.com/associations/association-label" target="_blank" class="nav-link">nous rejoindre</a>
+            <router-link to="/events" class="nav-link">événements</router-link>
+            <a href="https://www.helloasso.com/associations/label-i/" target="_blank" class="nav-link">nous rejoindre</a>
             <router-link to="/contact" class="nav-link">nous contacter</router-link>
         </div>
-        <div class="login-btn">
-            <button>Espace Membre</button>
+        <div>
+            <router-link to="/contact" class="nav-link"><button class="login-btn">Espace Membre</button></router-link>
         </div>
     </nav>
 
@@ -53,7 +53,7 @@ export default {
 .nav-link:hover {
     color:#0484ce;
 }
-.login-btn > button {
+.login-btn {
     text-transform: uppercase;
     font-size: 10px;
     font-weight: 700;
@@ -62,8 +62,12 @@ export default {
     background-color: #F8B04A;
     border-radius: 5px;
     border: none;
+    transition-duration: 300ms;
+    cursor: pointer;
 }
-
+.login-btn:hover{
+    transform: scale(1.05);
+}
 .link-container {
     display: flex;
     flex-direction: row;

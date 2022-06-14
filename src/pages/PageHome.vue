@@ -1,8 +1,6 @@
 <template>
-    <HomeBackground />
-    <div class="container">
-
-        <NavBar />
+    
+    <div class="home">
         <div class="page-content">
             <img src="@/assets/img/labeli_logo_full.png" alt="labeli_logo_full" id="logo">
             <p>
@@ -22,22 +20,21 @@
                     alt="facebook_logo" class="socials-img"></a>
 
         </div>
+        <SocialLinks/>
     </div>
 
 </template>
     
 <script>
-import NavBar from '@/components/NavBar.vue'
-import HomeBackground from '@/components/HomeBackground.vue'
+import SocialLinks from '@/components/SocialLinks'
 export default {
     components: {
-        NavBar,
-        HomeBackground
+        SocialLinks
     },
 }
 </script>
     
-<style>
+<style scoped>
 .page-content {
     display: flex;
     flex-direction: column;
@@ -59,27 +56,14 @@ export default {
 
 
 }
-
-.socials-btn {
-    display: flex;
+.socials-btn{
     flex-direction: column;
-    gap: 1rem;
-
     position: absolute;
-    top: 40%;
+    top: 50%;
+    transform: translatey(-50%);
     left: 10px;
+}
 
-
-    
-}
-.socials-img {
-    width: 30px;
-    opacity: 0.5;
-    transition-duration: 300ms;
-}
-.socials-img:hover {
-    opacity: 1;
-}
 @media screen and (max-width: 992px) {
     .page-content>p {
         font-size: 10px;
